@@ -118,22 +118,6 @@ const handlerClick = () => navigate("/search")
 
      {/* AICI SE TERMINA CODUL VECHI */}
 
-{/* <div className={styles.searchComponent}>
-        <input type='search' value={input} onChange={e => handlerKeyPress(e)} />
-
-        <div className={input.length > 0 ? `${styles.autocomplete}` : `${styles.hideElement}`}>
-          <ul>
-            {input.length > 0 ? searchData.map((item, index) => {
-              return (
-                <li onClick={() => autocompleteHandler(item.id)}
-                  key={index}>{item.title}</li>
-              )
-            }
-            ) : <></>}
-          </ul>
-        </div>
-        <button onClick={handlerClick}>See all results</button>
-      </div> */}
     </div>
   )
 }

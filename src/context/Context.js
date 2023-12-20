@@ -6,17 +6,11 @@ const API_SEARCH='https://api.themoviedb.org/3/search/movie?api_key=64569705d855
 
 const Context = ({ children }) => {
     const [movie, setMovie] = useState([]);
-    // const [data, setData] = useState([]);
     const [input, setInput] = useState("");
 	  const deferredQuery = useDeferredValue(input);
     const [movieSearch, setMovieSearch] = useState("");
     const [searchMovie, setSearchMovie] = useState("");
 
-    // const getData = async (url) => {
-    //   const response = await fetch(url);
-    //   const result = await response.json();
-    //   setData(result.products);
-    // };
 
     const getMovie = async(APi_URL) =>{
       const response = await fetch(APi_URL);
@@ -38,11 +32,7 @@ const Context = ({ children }) => {
       getSearchMovie(API_SEARCH + movieSearch);
     }, [movieSearch]);
 
-    //aici e exp din celalalt proiect
-
-    // useEffect(() => {
-    //   getData(url);
-    // }, [url]);
+  
 
     //aici e ala care MERGE
 
@@ -55,9 +45,6 @@ const Context = ({ children }) => {
     //      })
     //  },[])
 
-    //  useEffect(() => {
-	// 	getSearchData(API_SEARCH + dataSearch);
-	// }, [dataSearch]);
 
 
     //  const getSearchData = async()=>{
