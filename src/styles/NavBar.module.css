@@ -1,0 +1,26 @@
+.NavBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    padding: 15px;
+    color: white;
+    gap: 20px;
+    cursor: pointer;
+    background-color: rgb(155, 75, 75);
+}
+.NavBar input{
+
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 50px;
+}
+ .NavBar button{
+    padding: 12px;
+    border-radius: 50%;
+ }
+
+ .NavBar .ceva{
+    display: flex;
+    /* justify-content: flex-end; */
+ }
